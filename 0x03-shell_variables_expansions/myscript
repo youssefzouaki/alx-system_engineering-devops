@@ -1,0 +1,7 @@
+#!/bin/bash
+# Array of file names with number-word format
+files=("7-create_global_variable" "8-true_knowledge" "9-divide_and_rule" "10-love_exponent_breath" "11-binary_to_decimal" "12-combinations" "13-print_float" "100-decimal_to_hexadecimal" "101-rot13" "102-odd" "103-water_and_stir")
+
+    for file in "${files[@]}"; do
+	sed -i '2,3d' "$file"  # Delete the second and third lines in each file
+    done
